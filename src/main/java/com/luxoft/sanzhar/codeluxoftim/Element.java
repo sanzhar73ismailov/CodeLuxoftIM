@@ -26,6 +26,20 @@ public class Element {
         this.age = age;
     }
 
+    public int getNum() {
+        return num;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+    
+    
+
     @Override
     public int hashCode() {
         int hash = 7;
@@ -34,7 +48,7 @@ public class Element {
         return hash;
     }
 
-/*
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -53,16 +67,13 @@ public class Element {
         if ( (this.age > 20) != (other.age > 20)) {
             return false;
         }
-//        if (this.age != other.age) {
-//            return false;
-//        }
         return true;
     }
-    */
+    
 
     @Override
     public String toString() {
-        return "Element{" + "num=" + num + ", name=" + name + ", age=" + age + "}\r\n";
+        return "\r\nElement{" + "num=" + num + ", name=" + name + ", age=" + age + "}";
     }
 
 }
